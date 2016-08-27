@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F1D6E941D715A8E004AAEAC /* Converter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1D6E931D715A8E004AAEAC /* Converter.m */; };
 		7FE643D31D70610900030AFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE643D21D70610900030AFD /* main.m */; };
 		7FE643D61D70610900030AFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE643D51D70610900030AFD /* AppDelegate.m */; };
 		7FE643D91D70610A00030AFD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE643D81D70610A00030AFD /* ViewController.m */; };
@@ -15,6 +16,7 @@
 		7FE643E11D70610A00030AFD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FE643DF1D70610A00030AFD /* LaunchScreen.xib */; };
 		7FE643ED1D70610A00030AFD /* exchangeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE643EC1D70610A00030AFD /* exchangeTests.m */; };
 		7FE643F91D7069F300030AFD /* ConvertidorUsdtoValueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE643F81D7069F300030AFD /* ConvertidorUsdtoValueViewController.m */; };
+		BBD49F6A2AB7C9CFF509C40E /* libPods-exchange.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1864B284EE8553B5E8C698C /* libPods-exchange.a */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24BB394264181EB17A746914 /* Pods-exchange.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exchange.debug.xcconfig"; path = "Pods/Target Support Files/Pods-exchange/Pods-exchange.debug.xcconfig"; sourceTree = "<group>"; };
+		4C5CF6C72822BC1700330B64 /* Pods-exchange.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exchange.release.xcconfig"; path = "Pods/Target Support Files/Pods-exchange/Pods-exchange.release.xcconfig"; sourceTree = "<group>"; };
+		7F1D6E921D715A8E004AAEAC /* Converter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Converter.h; sourceTree = "<group>"; };
+		7F1D6E931D715A8E004AAEAC /* Converter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Converter.m; sourceTree = "<group>"; };
 		7FE643CD1D70610900030AFD /* exchange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exchange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FE643D11D70610900030AFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FE643D21D70610900030AFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -43,6 +49,7 @@
 		7FE643EC1D70610A00030AFD /* exchangeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = exchangeTests.m; sourceTree = "<group>"; };
 		7FE643F71D7069F300030AFD /* ConvertidorUsdtoValueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvertidorUsdtoValueViewController.h; sourceTree = "<group>"; };
 		7FE643F81D7069F300030AFD /* ConvertidorUsdtoValueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConvertidorUsdtoValueViewController.m; sourceTree = "<group>"; };
+		D1864B284EE8553B5E8C698C /* libPods-exchange.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-exchange.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBD49F6A2AB7C9CFF509C40E /* libPods-exchange.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,12 +71,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A7B2072571773845D8F3091 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1864B284EE8553B5E8C698C /* libPods-exchange.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F1D6E911D715A5D004AAEAC /* modelo */ = {
+			isa = PBXGroup;
+			children = (
+				7F1D6E921D715A8E004AAEAC /* Converter.h */,
+				7F1D6E931D715A8E004AAEAC /* Converter.m */,
+			);
+			name = modelo;
+			sourceTree = "<group>";
+		};
 		7FE643C41D70610900030AFD = {
 			isa = PBXGroup;
 			children = (
 				7FE643CF1D70610900030AFD /* exchange */,
 				7FE643E91D70610A00030AFD /* exchangeTests */,
 				7FE643CE1D70610900030AFD /* Products */,
+				F2713ED9B2321E4E9FA3075B /* Pods */,
+				2A7B2072571773845D8F3091 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +111,7 @@
 		7FE643CF1D70610900030AFD /* exchange */ = {
 			isa = PBXGroup;
 			children = (
+				7F1D6E911D715A5D004AAEAC /* modelo */,
 				7FE643D41D70610900030AFD /* AppDelegate.h */,
 				7FE643D51D70610900030AFD /* AppDelegate.m */,
 				7FE643F61D7064CA00030AFD /* controllers */,
@@ -132,6 +160,15 @@
 			name = controllers;
 			sourceTree = "<group>";
 		};
+		F2713ED9B2321E4E9FA3075B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24BB394264181EB17A746914 /* Pods-exchange.debug.xcconfig */,
+				4C5CF6C72822BC1700330B64 /* Pods-exchange.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +176,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7FE643F01D70610A00030AFD /* Build configuration list for PBXNativeTarget "exchange" */;
 			buildPhases = (
+				503095F2DFF9DCA2C296DC8B /* [CP] Check Pods Manifest.lock */,
 				7FE643C91D70610900030AFD /* Sources */,
 				7FE643CA1D70610900030AFD /* Frameworks */,
 				7FE643CB1D70610900030AFD /* Resources */,
+				8F0145F3EFECB7D5B703B0A3 /* [CP] Embed Pods Frameworks */,
+				E9F8B8B68EF523427962CFDC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,11 +267,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		503095F2DFF9DCA2C296DC8B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8F0145F3EFECB7D5B703B0A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-exchange/Pods-exchange-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9F8B8B68EF523427962CFDC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-exchange/Pods-exchange-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7FE643C91D70610900030AFD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F1D6E941D715A8E004AAEAC /* Converter.m in Sources */,
 				7FE643D91D70610A00030AFD /* ViewController.m in Sources */,
 				7FE643D61D70610900030AFD /* AppDelegate.m in Sources */,
 				7FE643F91D7069F300030AFD /* ConvertidorUsdtoValueViewController.m in Sources */,
@@ -297,6 +386,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -340,6 +430,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -359,6 +450,7 @@
 		};
 		7FE643F11D70610A00030AFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24BB394264181EB17A746914 /* Pods-exchange.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = exchange/Info.plist;
@@ -370,6 +462,7 @@
 		};
 		7FE643F21D70610A00030AFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C5CF6C72822BC1700330B64 /* Pods-exchange.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = exchange/Info.plist;
@@ -432,6 +525,7 @@
 				7FE643F21D70610A00030AFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7FE643F31D70610A00030AFD /* Build configuration list for PBXNativeTarget "exchangeTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +534,7 @@
 				7FE643F51D70610A00030AFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

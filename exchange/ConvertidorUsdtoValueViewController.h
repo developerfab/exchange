@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Converter.h"
 
 @interface ConvertidorUsdtoValueViewController : UIViewController
 
@@ -19,5 +20,11 @@
 - (IBAction)ConvertToJPYButton:(id)sender;
 
 - (IBAction)ConvertToBRLButton:(id)sender;
+
+@property (strong, nonatomic) IBOutlet UILabel *unit;
+
+@property (strong, nonatomic) IBOutlet UILabel *result;
+
+@property Converter *conveter;
 
 @end

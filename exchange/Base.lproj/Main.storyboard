@@ -104,18 +104,6 @@
                                     <action selector="ConvertToBRLButton:" destination="Ph2-lf-6he" eventType="touchUpInside" id="v5n-XS-MJf"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Resultado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hip-EZ-q2K">
-                                <rect key="frame" x="16" y="333" width="568" height="44"/>
-                                <color key="backgroundColor" red="0.7402999457601559" green="0.90646743001331098" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="1dt-g8-yvR"/>
-                                    <constraint firstAttribute="height" constant="40" id="Lrj-JT-AdP"/>
-                                    <constraint firstAttribute="width" constant="568" id="r7b-3z-XjK"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TGu-DS-qIy">
                                 <rect key="frame" x="175" y="115" width="250" height="30"/>
                                 <constraints>
@@ -125,6 +113,26 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Valor unitario" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3lq-ig-LMb">
+                                <rect key="frame" x="16" y="330" width="568" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.94834321306815683" blue="0.87121634381316726" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="NkD-Hm-plO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Resultado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hip-EZ-q2K">
+                                <rect key="frame" x="16" y="379" width="568" height="44"/>
+                                <color key="backgroundColor" red="0.7402999457601559" green="0.90646743001331098" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="nRq-nB-7u5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -134,25 +142,30 @@
                             <constraint firstAttribute="centerY" secondItem="TGu-DS-qIy" secondAttribute="centerY" constant="170" id="5Lp-cW-jlT"/>
                             <constraint firstAttribute="centerX" secondItem="d0Q-C1-dbP" secondAttribute="centerX" id="6WM-JA-hbD"/>
                             <constraint firstAttribute="centerX" secondItem="TGu-DS-qIy" secondAttribute="centerX" id="AqB-nk-vjA"/>
+                            <constraint firstItem="Hip-EZ-q2K" firstAttribute="top" secondItem="3lq-ig-LMb" secondAttribute="bottom" constant="19" id="GEe-DO-ExE"/>
                             <constraint firstItem="9tb-wm-4OY" firstAttribute="top" secondItem="PYS-PP-bKx" secondAttribute="bottom" constant="19" id="Hyp-cz-hhj"/>
+                            <constraint firstAttribute="centerY" secondItem="Hip-EZ-q2K" secondAttribute="centerY" constant="-101" id="Ne8-0G-a3b"/>
                             <constraint firstAttribute="centerY" secondItem="xik-qc-Ctn" secondAttribute="centerY" constant="77" id="R4T-48-g0G"/>
                             <constraint firstItem="d0Q-C1-dbP" firstAttribute="top" secondItem="et1-g0-8cF" secondAttribute="bottom" constant="8" id="SJj-Zp-voP"/>
                             <constraint firstItem="et1-g0-8cF" firstAttribute="top" secondItem="xik-qc-Ctn" secondAttribute="bottom" constant="8" id="ZPA-1y-nUn"/>
+                            <constraint firstAttribute="centerX" secondItem="3lq-ig-LMb" secondAttribute="centerX" id="dhJ-G8-y29"/>
                             <constraint firstAttribute="centerX" secondItem="PYS-PP-bKx" secondAttribute="centerX" id="eaQ-e2-Lf5"/>
                             <constraint firstItem="TGu-DS-qIy" firstAttribute="top" secondItem="9tb-wm-4OY" secondAttribute="bottom" constant="26" id="fsc-1Q-BjA"/>
                             <constraint firstAttribute="centerX" secondItem="2w6-gr-hM2" secondAttribute="centerX" id="iJN-7d-6UC"/>
-                            <constraint firstAttribute="centerY" secondItem="Hip-EZ-q2K" secondAttribute="centerY" constant="-55" id="l6J-cI-0s9"/>
-                            <constraint firstAttribute="centerX" secondItem="Hip-EZ-q2K" secondAttribute="centerX" id="o8W-UN-Pcp"/>
+                            <constraint firstAttribute="centerY" secondItem="3lq-ig-LMb" secondAttribute="centerY" constant="-45" id="mIy-K9-TxD"/>
+                            <constraint firstAttribute="centerX" secondItem="Hip-EZ-q2K" secondAttribute="centerX" id="ogt-El-Glo"/>
                             <constraint firstAttribute="centerX" secondItem="9tb-wm-4OY" secondAttribute="centerX" id="pB5-ka-Gkm"/>
                             <constraint firstAttribute="centerY" secondItem="et1-g0-8cF" secondAttribute="centerY" constant="39" id="pPJ-l1-2xf"/>
                             <constraint firstAttribute="centerX" secondItem="et1-g0-8cF" secondAttribute="centerX" id="rJd-te-HBV"/>
-                            <constraint firstItem="Hip-EZ-q2K" firstAttribute="top" secondItem="d0Q-C1-dbP" secondAttribute="bottom" constant="19" id="s39-mK-fMA"/>
                             <constraint firstAttribute="centerY" secondItem="d0Q-C1-dbP" secondAttribute="centerY" constant="1" id="tfg-AN-bbE"/>
                             <constraint firstItem="xik-qc-Ctn" firstAttribute="top" secondItem="2w6-gr-hM2" secondAttribute="bottom" constant="8" id="vEj-yQ-iLJ"/>
+                            <constraint firstItem="3lq-ig-LMb" firstAttribute="top" secondItem="d0Q-C1-dbP" secondAttribute="bottom" constant="16" id="vi7-N7-XSx"/>
                             <constraint firstAttribute="centerX" secondItem="xik-qc-Ctn" secondAttribute="centerX" id="ydd-98-Z9z"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="result" destination="Hip-EZ-q2K" id="MXJ-Od-Jqe"/>
+                        <outlet property="unit" destination="3lq-ig-LMb" id="Jzz-LG-Poe"/>
                         <outlet property="valueToConvert" destination="TGu-DS-qIy" id="gAw-o0-LF3"/>
                     </connections>
                 </viewController>
