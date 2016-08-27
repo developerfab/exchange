@@ -11,7 +11,7 @@
 
 @interface Converter : NSObject
 
--(NSString *) convert:(NSString*)valueBase:(NSString*)inputValue;
+-(NSString *) convert:(NSString*)valueBase :(NSString*)inputValue;
 
 
 @end
